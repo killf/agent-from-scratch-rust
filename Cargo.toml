@@ -1,7 +1,9 @@
 [workspace]
-members = []
+members = ["c01-invoking-llm"]
 resolver = "3"
 
 [workspace.dependencies]
 serde = { version = "1.0" }
-tokio = { version = "1.0" }
+serde_json = { version = "1.0" }
+tokio = { version = "1.0", features = ["full"] }
+reqwest = { version = "0.13", features = ["json"] }
